@@ -73,7 +73,7 @@ li $v0, 0xFAB
 syscall
 ~~~
 
-### 1.2execve函数定义
+### 1.2 execve函数定义
 1、execve的定义形式：int execve(const char *filename, char *const argv[], char *const envp[]);
 
 2、参数说明：

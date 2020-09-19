@@ -19,18 +19,18 @@ void main()
 	char ch;
 	int count = 0;
 	unsigned int filelen = 0;
-	struct stat filedata;                                   //获取文件信息
+	struct stat filedata;									//获取文件信息
 	FILE*fp;    
 	if(0== stat("passwd",&filedata))
 	{
-		filelen=filedata.st_size;                           //获取文件大小
+		filelen=filedata.st_size;							//获取文件大小
 	}
 	else
 	{
 	
 		return 1;
 	}
-	if((fp=fopen("passwd","rb"))==NULL)                     //打开文件
+	if((fp=fopen("passwd","rb"))==NULL)						//打开文件
 	{
 		printf("cannot open file passwd!\n");
 		exit(1);
@@ -38,13 +38,13 @@ void main()
 	ch=fgetc(fp);
 	while(count<=filelen)
 	{
-		buf[count++] = ch;                                  //循环读取内容到堆栈中
+		buf[count++] = ch;									//循环读取内容到堆栈中
 		ch = fgetc(fp);
 	}
 	buf[--count] = '\x00';
 	if(!strcmp(buf,"adminpwd"))
 	{
-		do_system(count,"ls -l");                           //执行ls -l命令
+		do_system(count,"ls -l");							//执行ls -l命令
 	
 	}
 	else
