@@ -1,9 +1,9 @@
-## Ghibra简介
-Ghidra是由美国国家安全局（NSA）研究部门开发的软件逆向工程（SRE）套件，用于静态分析文件，支持多种平台文件的反汇编以及反编译。针对IDA和Ghibra的详细区别见文章：
+## Ghidra简介
+Ghidra是由美国国家安全局（NSA）研究部门开发的软件逆向工程（SRE）套件，用于静态分析文件，支持多种平台文件的反汇编以及反编译。针对IDA和Ghidra的详细区别见文章：
 ~~~
 https://zhuanlan.zhihu.com/p/59637690
 ~~~
-## Ghibra编译安装（linux）
+## Ghidra编译安装（linux）
 ### 一：安装JDK11
 #### 1:下载JDK11
 需要说明的是不要下载最新版本的JDK，最好按照官方指定的JDK11版本，因为会影响后面使用脚本安装依赖，当然后面如果不使用脚本安装依赖的话就大于等于JDK11即可。
@@ -166,8 +166,8 @@ cp ~/Downloads/'PyDev 6.3.1.zip' ~/git/ghidra/GhidraBuild/EclipsePlugins/GhidraD
 ```
 ~~~
 
-### 六：构建Ghibra
-#### 1:使用cd切换到Ghibra根目录
+### 六：构建Ghidra
+#### 1:使用cd切换到Ghidra根目录
 #### 2:使用如下命令进行构建
 ~~~
 gradle buildGhidra
@@ -190,4 +190,4 @@ MODULE FILE LICENSE: *.jar BSD即可
 https://github.com/NationalSecurityAgency/ghidra/issues/1368
 ~~~
 #### 5:运行Ghrbra
-编译成功之后会在```~/git/ghidra/build/dist/```目录中进行输出一个zip文件，其名称由版本，名称，构建日期以及运行平台构成，在解压之后的目录中有一个名为ghidraRun的文件，运行即可，如果能够成功打开，那么恭喜你，你就可以对Ghibra进行开发并使用了。
+编译成功之后会在```~/git/ghidra/build/dist/```目录中进行输出一个zip文件，其名称由版本，名称，构建日期以及运行平台构成，在解压之后的目录中有一个名为ghidraRun的文件，运行即可，如果能够成功打开，那么恭喜你，你就可以对Ghidra进行开发并使用了。
